@@ -14,8 +14,8 @@ export default async function GamePage({params}: GamePageProps) {
     return (
         <main>
         <Image
-        src={data.background_image}
-        alt="game image"
+        src={data.background_image ? data.background_image : "/imgnotfound.jpg"}
+        alt={data.name}
         width={300}
         height={200}
             />

@@ -10,18 +10,18 @@ interface gameCardProps {
 export default function GameCard({ game }: gameCardProps) {
     return (
         <Link href={"/game/" + game.slug}>
-        <li>
-            <Image
-                src={game.background_image}
-                alt={game.name}
-                width={100}
-                height={100}
-            />
-            <article>
-                <h3>{game.name}</h3>
-                <p>{game.id}</p>
-            </article>
-        </li>
-     </Link>
+            <li>
+                <Image
+                    src={game.background_image ? game.background_image : "/imgnotfound.png"}
+                    alt={game.name}
+                    width={100}
+                    height={100}
+                />
+                <article>
+                    <h3>{game.name}</h3>
+                    <p>{game.id}</p>
+                </article>
+            </li>
+        </Link>
     )
 }
