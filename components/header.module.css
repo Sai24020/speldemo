@@ -1,0 +1,11 @@
+header.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header.header section {
+    display: flex;
+    gap: 1rem;
+}
