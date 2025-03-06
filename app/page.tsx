@@ -4,7 +4,7 @@ import GameCard from "@/components/game-card";
 
 export default async function Home() {
   // hämta populära spel från API
-  const res = await fetch(`https://api.rawg.io/api/games?key=861f3caabf914e8cada5fa43f66b4eb3`); //lägg till din api-nyckel
+  const res = await fetch(`https://api.rawg.io/api/games?key=${process.env.RAWG_API_KEY}`); //lägg till din api-nyckel
   const data = await res.json();
   console.log(data);
 

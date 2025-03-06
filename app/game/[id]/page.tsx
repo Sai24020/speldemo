@@ -9,7 +9,7 @@ interface GamePageProps {
 }
 export default async function GamePage({params}: GamePageProps) {
    const { id } = await params;
-    const res = await fetch(`https://api.rawg.io/api/games/${params.id}?key=861f3caabf914e8cada5fa43f66b4eb3`);
+    const res = await fetch(`https://api.rawg.io/api/games/${params.id}?key=${process.env.RAWG_API_KEY}`);
     const data:GameDesc = await res.json();
     return (
         <main>
