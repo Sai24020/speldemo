@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/header";
-//https://api.rawg.io/api/games?key=bc1c2e51bf4d42acab01e84969eb1429
 
 export const metadata: Metadata = {
   title: "Create Next App",
